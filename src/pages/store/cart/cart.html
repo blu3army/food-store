@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><h1>Food Store</h1></li>
+                <li><a href="../home/home.html">Inicio</a></li>
+                <li><a href="../cart/cart.html">Carrito</a></li>
+                <li>
+                    <input type="text" id="input-search" placeholder="Buscá productos...">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+
+
+    <main>
+        <h1 class="title">Carrito de Compras</h1>
+        
+        <div class="cart-container">
+            <ul id="cart-products">
+            </ul>
+         
+            <aside class="cart-summary">
+                <h3>Resumen del pedido</h3>
+                <h2 id="total-price">Total: $0</h2>
+            
+                <button class="checkout-button" disabled>Finalizar compra</button>        
+                <button id="clear-cart-button" class="clear-cart-button">Vaciar carrito</button>  
+            </aside>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>
+            &copy; 2024 Food Store. Todos los derechos reservados.
+        </p>
+    </footer>
+
+
+    <script type="module" src="./cart.ts"></script>
+</body>
+</html>
